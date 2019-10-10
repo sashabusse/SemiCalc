@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_bar_h_parameters"
+        android:icon="@drawable/ic_nav_h_parameters"
+        android:title="h_parameters"/>
+
+    <item
+        android:id="@+id/bottom_bar_cir_parameters"
+        android:icon="@drawable/ic_nav_cir_parameters"
+        android:title="cir_parameters"/>
+</menu>

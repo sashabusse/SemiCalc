@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/CC11"
+        android:layout_alignTop="@+id/CC11"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="-62dp"
+        android:layout_marginBottom="0dp"
+        android:text="Common Collector"
+        android:textSize="22dp" />
+
+    <EditText
+        android:id="@+id/CC11"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="77dp"
+        android:ems="6"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/CC12"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/CC11"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/CC11"
+        android:ems="10"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/CC21"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CC11"
+        android:layout_alignStart="@+id/CC11"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/CC22"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/CC12"
+        android:layout_alignTop="@+id/CC21"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/CCbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/CC12"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="35dp"
+        android:layout_toEndOf="@+id/CC12"
+        android:rotation="-90"
+        android:text="Recalc" />
+
+</RelativeLayout>

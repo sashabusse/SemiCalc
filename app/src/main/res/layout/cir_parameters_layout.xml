@@ -1,12 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="circuit parameters"
-        android:textSize="30dp"/>
+        android:layout_alignStart="@+id/H_CIR11"
+        android:layout_alignTop="@+id/H_CIR11"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="-62dp"
+        android:layout_marginBottom="0dp"
+        android:text="H parameters"
+        android:textSize="22dp" />
 
-</LinearLayout>
+    <EditText
+        android:id="@+id/H_CIR11"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="77dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/H_CIR12"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/H_CIR11"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/H_CIR11"
+        android:ems="10"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/H_CIR21"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/H_CIR11"
+        android:layout_alignStart="@+id/H_CIR11"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/H_CIR22"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/H_CIR12"
+        android:layout_alignTop="@+id/H_CIR21"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:inputType="text" />
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/H_CIR21"
+        android:layout_alignStart="@+id/H_CIR21"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="47dp"
+        android:text="R of generator"
+        android:textSize="22dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="47dp"
+        android:text="R of load"
+        android:textSize="22dp" />
+
+    <EditText
+        android:id="@+id/RGEN"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="-8dp"
+        android:layout_marginBottom="-7dp"
+        android:layout_toEndOf="@+id/textView"
+        android:ems="10"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/RLOAD"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/RGEN"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="-7dp"
+        android:layout_marginBottom="-8dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/Cir_RecalcBtn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="38dp"
+        android:text="Recalc" />
+
+    <TextView
+        android:id="@+id/KI_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Cir_RecalcBtn"
+        android:layout_alignStart="@+id/Cir_RecalcBtn"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="50dp"
+        android:text="KI = NaN"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/KU_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KI_TV"
+        android:layout_alignStart="@+id/KI_TV"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="40dp"
+        android:text="KU = NaN"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/RIN_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/KI_TV"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/Cir_RecalcBtn"
+        android:text="Rin = NaN"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/ROUT_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/RIN_TV"
+        android:layout_alignTop="@+id/KU_TV"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="Rout = NaN"
+        android:textSize="22dp" />
+
+    <TextView
+        android:id="@+id/KP_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KU_TV"
+        android:layout_alignStart="@+id/KU_TV"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="50dp"
+        android:text="KP = NaN"
+        android:textSize="22dp" />
+
+</RelativeLayout>
+</ScrollView>
